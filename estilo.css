@@ -1,0 +1,199 @@
+html {
+    font-size: 16px;
+}
+body {
+    background-color: #160138;
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.contenedor {
+    background-color: #f3f5fc;
+    color: #0A3871;
+    margin: auto;
+    padding: 25px;
+    position: relative;    
+    width: 880px;
+    height: 610px;
+}
+header, .estado, #play-button, #home-button, #div-agregar, #correcto, #incorrecto, footer {
+
+    border-radius: 1.5rem;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.logoima {
+    margin-top: 0%;
+    margin-left: 5%;
+    float: inherit;
+}
+.tituloInicial {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 3%;
+    margin-left: 20%;
+    transition: 500ms all;
+    float: inherit;
+}
+.tituloInicial:hover {
+    color: purple;
+    text-decoration: underline;
+}
+#div-juego, #div-agregar {
+    display: none;
+}
+#miCanvas {
+    border: none;
+    display: inline-block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 33.5rem;
+    height: 16.75rem;
+}
+.letra {
+    display: inline-block;
+    vertical-align: middle;
+}
+#correcto {
+    font-size: 3rem;
+}
+.correcta {
+    border-bottom: 0.25rem solid #0A3871;
+    line-height: 4.5rem;    
+    margin-left: 0.4rem;
+    width: 4.5rem;
+    height: 4.5rem;    
+}
+#incorrecto {
+    color: #495057;
+    font-size: 1.5rem;
+    height: 1.5rem;
+    margin-top: 1.5rem;
+}
+.incorrecta {
+    margin-left: 1.5rem;
+}
+.boton {
+    background-color: #f3f5fc;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    font: inherit;
+    margin: 4% 5%;
+    padding: 0.75rem;
+    width: 11.9rem;
+    height: 2.8rem;
+    transition: 500ms all;
+}
+.boton:hover {
+    border-color: purple;
+    font-weight: bold;    
+    text-transform: uppercase;
+    transform: scale(1.1);
+}
+#home-button {
+    height: 50%;
+    padding-top: 15%;
+}
+#bot-iniciar {
+    background-color: #0A3871;
+    color: white;
+    display: block;
+    font-size: 1.1rem;
+    margin: 2% auto;
+    width: 13.1rem;
+    height: 5.6rem;
+}
+#bot-nuevo {
+    background-color: #0A3871;
+    color: white;
+}
+#bot-agregar {
+    margin: 2% auto;
+}
+#div-agregar{
+    text-align: left;
+}
+label {
+    display: block;
+    font-size: 1.25rem;
+    margin: 0 5% 0.5rem;
+}
+.input-padron {
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    font-weight: bold;
+    margin: 0 5% 1.25rem;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 50%;
+}
+#bot-submit {
+    margin: 0;
+    width: auto;
+}
+#div-agregar p {
+    font-size: 0.8rem;
+    margin-left: 5%;
+}
+footer {
+    bottom: 1px;
+    padding: 0.25rem;
+    position:absolute;
+    overflow: auto;    
+    width: 95%;
+}
+.copyright {
+    font-size: 13px;
+    margin: 2px;
+}
+@media screen and (max-width:480px){
+    html {
+        font-size: 12px;
+    }
+    .contenedor {
+        padding: 5% 0%;
+        position: static;
+        width: 100%;
+        height: 90%;
+    }
+    header, .estado, #play-button, #home-button, #div-agregar, #correcto, #incorrecto, footer {
+        width: auto;
+        float: none;
+    }
+    header {
+        text-align: left;
+    }
+    .tituloInicial {
+        margin-top: 1rem;
+        margin-left: auto;
+        text-align: center;
+    }
+    #correcto {
+        font-size: 2rem;
+    }
+    .correcta {
+        line-height: 3rem;    
+        margin-left: 0.3rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    #div-agregar {
+        margin-top: 5%;
+    }
+    .input-padron {
+        display: block;
+        width: 75%;
+    }
+    #bot-submit {
+        margin-left: 40%;
+        margin-bottom: 5%;
+    }
+    footer {
+        position: static;
+    }
+}

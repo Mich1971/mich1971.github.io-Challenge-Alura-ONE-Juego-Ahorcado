@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Segundo Challenge Alura ONE</title>
+        <link rel="shortcut icon" href="./vectorlogo.png">
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="contenedor">
+            <header>
+                <img class="logoima" src="./vectorlogo.png" alt="Logo Alura">
+                <h1 class="tituloInicial" onclick="revelar()">JUEGO DEL AHORCADO</h1>
+            </header>
+            <section id="div-juego">
+                <div class="estado">
+                    <canvas id="miCanvas">Su navegador no soporta el elemento canvas.</canvas>
+                </div>
+                <div id="correcto">
+                </div>
+                <div id="incorrecto">
+                </div>
+                <div id="play-button">
+                    <button id="bot-nuevo" class="boton" type="button" onclick="nuevo()">Nuevo Juego</button>
+                    <button id="bot-desistir" class="boton" type="button" onclick="desistir()">Desistir</button>
+                </div>
+            </section>
+            <div id="home-button">
+                <button id="bot-iniciar" class="boton" type="button" onclick="iniciar()">Iniciar Juego</button>
+                <button id="bot-agregar" class="boton" type="button" onclick="agregar()">Agregar Palabra</button>
+            </div>
+            <form id="div-agregar" action="javascript:void(0)">
+                <label for="nuevaPalabra">Ingrese la nueva palabra:</label>
+                <input id="nuevaPalabra" class="input-padron" type="text" maxlength="10" placeholder="Palabras de maximo 10 letras.">
+                <input id="bot-submit" class="boton" type="submit" onclick="newWord()" value="¡Guardar!">
+                <p>↑ Solo letras mayúsculas, sin acentos, ni caracteres especiales, ni números. ↑</p>
+            </form>
+            <footer>
+                <p class="copyright">Versión 1.0.0 &copy; Copyright MC Desings - 2022</p>
+            </footer>
+        </div>
+        <script type="text/javascript" src="./program.js"></script>
+        <script type="text/javascript" src="./canvas.js"></script>
+    </body>
+</html>
